@@ -79,9 +79,23 @@
 
 ## 🖥️ How It Runs
 
-### Environment
-- **Primary**: Jupyter Notebook (`bullspin_mvp.ipynb`)
-- **Alternative**: Python script (`bullspin_agents.py`)
+### Two Ways to Run
+
+**Option 1: Command Line** (Simpler - recommended if you prefer terminal)
+```bash
+python run_bullspin.py --scenario research
+python run_bullspin.py --scenario writing --threads "url1,url2"
+python run_bullspin.py --scenario tracking
+```
+See: `CLI-GUIDE.md` for complete guide
+
+**Option 2: Jupyter Notebook** (Interactive - good for step-by-step exploration)
+```bash
+jupyter notebook bullspin_mvp.ipynb
+```
+See: `QUICKSTART.md` for notebook guide
+
+**Both produce identical results** - same agents, same conversations, same logs. Pick what you're comfortable with!
 
 ### Execution Flow
 1. **Manual trigger** (for now): Run notebook cell or script
